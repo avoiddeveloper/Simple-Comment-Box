@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Comment Box</title>
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="h-screen bg-slate-500">
+    <header></header>
+    <main class="h-full flex flex-col items-center justify-center">
+        <!-- Main Div -->
+        <div class="w-11/12 lg:w-1/2 bg-white rounded-xl p-5 space-y-5">
+            <!-- Comment Container -->
+            <div id="comment_container" class="space-y-4">
+                <div class="space-y-2">
+                    <h2 class="font-bold text-2xl">David Warner</h2>
+                    <p class="text-lg text-slate-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque,
+                        excepturi quis. Labore hic
+                        commodi quod repudiandae vel dolor animi odit eligendi officia?</p>
+                </div>
+
+                <div class="space-y-2">
+                    <h2 class="font-bold text-2xl">John Smith</h2>
+                    <p class="text-lg text-slate-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores
+                        est soluta tempore, odio numquam sapiente, saepe dignissimos, libero eligendi tempora voluptate
+                        veritatis. Nostrum, provident!</p>
+                </div>
+            </div>
+
+            <div class="text-center space-y-3">
+                <input id="nameField" type="text" placeholder="Enter Your Name" class="input input-bordered w-full" />
+                <br>
+                <textarea id="commentField" class="textarea textarea-bordered w-full"
+                    placeholder="Write a comment"></textarea>
+                <br>
+                <button id="post" class="btn btn-nutral">Post</button>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom JS -->
+    <script src="./comment.js"></script>
+</body>
+
+</html>
